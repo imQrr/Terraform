@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2EECF">
+
+    <ImageView
+        android:id="@+id/terraformLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/terraformnobg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:backgroundTint="#D2EECF"
+        app:iconTint="#050505"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textColor="#6CB56F"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <Button
+        android:id="@+id/whiteButton"
+        android:layout_width="291dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFFFFF"
+
+        android:clickable="false"
+        android:textAllCaps="false"
+        android:textColor="#70000000"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="13"
+        android:hint="              Enter your full name"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteButton"
+        app:layout_constraintEnd_toEndOf="@+id/whiteButton"
+        app:layout_constraintStart_toStartOf="@+id/whiteButton"
+        app:layout_constraintTop_toTopOf="@+id/whiteButton" />
+
+    <Button
+        android:id="@+id/whiteButton2"
+        android:layout_width="291dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="false"
+        android:textAllCaps="false"
+        android:textColor="#70000000"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="13"
+        android:hint="                 Enter your email"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteButton2"
+        app:layout_constraintEnd_toEndOf="@+id/whiteButton2"
+        app:layout_constraintStart_toStartOf="@+id/whiteButton2"
+        app:layout_constraintTop_toTopOf="@+id/whiteButton2" />
+
+    <Button
+        android:id="@+id/whiteButton3"
+        android:layout_width="291dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="false"
+        android:textAllCaps="false"
+        android:textColor="#70000000"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="13"
+        android:hint="                 Enter password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteButton3"
+        app:layout_constraintEnd_toEndOf="@+id/whiteButton3"
+        app:layout_constraintStart_toStartOf="@+id/whiteButton3"
+        app:layout_constraintTop_toTopOf="@+id/whiteButton3" />
+
+    <Button
+        android:id="@+id/whiteButton4"
+        android:layout_width="291dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="false"
+        android:textAllCaps="false"
+        android:textColor="#70000000"
+        app:cornerRadius="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <EditText
+        android:id="@+id/confirmPasswordText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:ems="13"
+        android:hint="               Confirm password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/whiteButton4"
+        app:layout_constraintEnd_toEndOf="@+id/whiteButton4"
+        app:layout_constraintStart_toStartOf="@+id/whiteButton4"
+        app:layout_constraintTop_toTopOf="@+id/whiteButton4" />
+
+    <Button
+        android:id="@+id/confirmRegisteration"
+        android:layout_width="291dp"
+        android:layout_height="66dp"
+        android:backgroundTint="#69CC4F"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.932" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
