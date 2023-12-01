@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".seed.CheckSeedActivity"
+    android:background="#E8F5E6">
+
+
+    <Button
+        android:id="@+id/backButtonPlant"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-10dp"
+        android:backgroundTint="#E8F5E6"
+        app:icon="@drawable/baseline_arrow_back_24"
+        app:iconTint="#050505" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="Add new plant to the database"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="30dp">
+
+        <EditText
+            android:id="@+id/enterCropName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Crop name"
+            android:inputType="text"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/enterCropArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Area (Field ID)"
+            android:inputType="text"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/enterCropPlantDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Planting date"
+            android:inputType="text"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/baseline_image_24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/plantSeedButton"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#69CC4F"
+            android:text="Plant Seed" />
+        <Button
+            android:id="@+id/viewPlantedSeeds"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="#69CC4F"
+            android:text="View Plants" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
